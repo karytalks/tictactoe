@@ -1,0 +1,84 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section{
+ 
+    display: flex;
+    width:100vw;
+    height: 100vh;
+    gap:50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image:url('./assets/gradient-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container{
+padding: px;
+}
+.game-info{
+    background-color: rgba(255, 255, 255, 0.15);
+    border:1px solid rgba(255, 255, 255, 0.15);
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    color: white;
+
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.tic-tac-toe{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows:repeat(3, 1fr);
+   
+    background-color: rgba(255, 255, 255, 0.15);
+    border:1px solid rgba(255, 255, 255, 0.15);
+    padding: 3rem 3rem;
+    border-radius: 1rem;
+
+}
+.btn{
+    background-color: rgba(255, 255, 255, 0.15);
+    border:1px solid rgba(255, 255, 255, 0.15);
+    padding: .5rem 3rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: white;
+
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    display: none;
+}
+.btn.active{
+    display: flex;
+}
+.box{
+   color: white;
+    font-size: 2.5rem;
+    padding:25px;
+}
+.box1,.box2,.box4,.box5{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.box7,.box8{
+    border-right: 2px solid white;
+}
+.box3,.box6{
+    border-bottom: 2px solid white;
+}
+.win{
+    background-color: rgba(0,255,0,.3);
+}
+
+
